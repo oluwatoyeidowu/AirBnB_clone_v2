@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Starts Flask web app
 Routes:
     / - display "Hello HBNB!"
@@ -12,6 +13,7 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hbnb_route():
+
     """prints Hello HBNB"""
     return "Hello HBNB!"
 

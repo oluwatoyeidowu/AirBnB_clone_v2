@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Starts Flask web app
 Routes:
     / - display "Hello HBNB!"
@@ -8,6 +9,7 @@ Routes:
     /number/<n> - display n if integer
     /number_template/<n> - display a HTML page if n is int
 """
+
 from flask import Flask, render_template
 
 app = Flask(__name__)
@@ -15,6 +17,7 @@ app = Flask(__name__)
 
 @app.route('/', strict_slashes=False)
 def hbnb_route():
+
     """prints Hello HBNB"""
     return "Hello HBNB!"
 

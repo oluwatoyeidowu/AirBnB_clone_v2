@@ -4,6 +4,7 @@ The application listens on 0.0.0.0, port 5000.
 Routes:
     /hbnb: HBnB home page.
 """
+
 from models import storage
 from flask import Flask
 from flask import render_template
@@ -13,6 +14,7 @@ app = Flask(__name__)
 
 @app.route("/hbnb", strict_slashes=False)
 def hbnb():
+
     """Displays the main HBnB filters HTML page."""
     states = storage.all("State")
     amenities = storage.all("Amenity")

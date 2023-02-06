@@ -1,4 +1,5 @@
 #!/usr/bin/python3
+
 """Starts Flask web app
 Listening on 0.0.0.0:5000
 Route '/' displays "Hello HBNB!"
@@ -11,6 +12,7 @@ app = Flask(__name__)
 @app.route('/', strict_slashes=False)
 def hello_route():
     """Displays 'Hello HBNB!'"""
+
     return "Hello HBNB!"
 
 
